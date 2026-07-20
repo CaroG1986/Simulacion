@@ -2,10 +2,13 @@
 
 ## Actividad 1
 
-La aleatoriedad en el arte generativo
+> La aleatoriedad en el arte generativo
 
 Reflexiones importantes: 
 
+- El arte siempre ha estado ligado de una manera u otra a la ciencia, en la era actual de una forma más evidente, sin embargo en la teoria de los principios básicos del arte se encuentran ligados a conceptos de la matematica, geometria, física, etc. Por ejemplo: la perspectiva, la composición, la luz, las proporciones, entre otros.
+- El arte generativo sule ser muy abstracto, ya que busca como la mayoria del arte moderno espresar algo más allá de lo qiue ya es visible, en este caso la fusión de la tecnología con el arte.
+- Algo interesante del arte generativo es que al juntarse con la aleatoriedad le abre la puerta a los artistas a facilitar su trabajo, ya que pueden usar la misma "semilla" o código base y aun así generar obras complatamente distintas 
 
 ## Actividad 2
 
