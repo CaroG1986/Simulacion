@@ -190,3 +190,104 @@ function draw() {
 <img width="831" height="540" alt="image" src="https://github.com/user-attachments/assets/0463da61-682f-4cba-9ba7-1a60dd63d5c5" />
 
 ## Actividad 5
+
+> Analicemos juntos y detenidamente el concepto de Lévy flight.
+
+Por lo que comprendi el Levy flight es como un salto que se hace en los datos para que haya algo de variedad, en este caso se explicaba como una forma de recorrer menos vecxes el mismo punto.
+
+> Ahora vas a:
+
+> Crea un nuevo sketch en p5.js donde modifiques uno de los ejemplos anteriores y adiciones de Lévy flight.
+
+Hice una prueba con la caminata pero no vi en ningun momento el salto
+
+```js
+let walker;
+
+function setup() {
+  createCanvas(640, 240);
+  walker = new Walker();
+  background(100);
+  
+}
+
+function draw() {
+  walker.step();
+  walker.show();
+}
+
+function keyPressed() {
+  // Code to run.
+}
+class Walker {
+  constructor() {
+    this.x = width / 2;
+    this.y = height / 2;
+  }
+
+  show() {
+    noStroke();
+    let c = [175, 20, random(100, 200)];
+    fill(c);
+    square(this.x, this.y,20);
+  }
+
+  step() {
+    const choicex = floor(randomGaussian(1));
+    const choicey = floor(random(2,4));
+    if (choicex >0.1|| choicex <2) {
+      this.x= random(330, 310);
+    } else if (choicex < 0.1) {
+      this.x= random(-100, 100);
+    } else if (choicey == 2) {
+      this.y++;
+    } else {
+      this.y--;
+    }
+  }
+}
+```
+
+<img width="805" height="305" alt="image" src="https://github.com/user-attachments/assets/8c5a70ae-3df3-463a-87ca-9eb6e5f55fd9" />
+
+Me imagino que es porque al final del dia sigue teniendo muy poca probabilidad, pero luego investigue y resulta que mis errores fueron dos: 
+- en el código "floor(randomGaussian(1))" el floor lo que hace es redondear a números enteros, así que en ningun momento iba a obtener un número decimal como queria
+- mi idea de Levy fly estaba equivocada, la idea era que cuando diera el gran paso luego siguiera dando pasos pequeños
+
+Por ende le pregunte a una IA que podía hacer para ese cambio y me recomendo cambiar la función step de la siguiente manera: 
+
+```js
+  step() {
+ // 90% de probabilidad: paso pequeño (difusión normal cerca del centro)
+ // 10% de probabilidad: SALTO GRANDE a los extremos
+ if (random(1) < 0.9) {
+ // Paso pequeño con distribución normal (centrado en la posición actual)
+ this.x += randomGaussian(0, 5); // media 0, desviación 5 -> pasos de ~1-10px
+ } else {
+ // ¡SALTO! a algún extremo, izquierda o derecha
+ if (random(1) < 0.3) {
+ this.x = random(0, 50); // salta a la izquierda
+ } else {
+ this.x = random(width - 50, width); // salta a la derecha
+ }
+ }
+```
+
+Básicamente es muy parecido al ejemplo inicial de la caminata pero ahora juega con las probabilidades para que sean más extremas, y como resultado visual obtuve lo siguiente (que según yo se parece más a lo que necesitaba) :
+
+<img width="801" height="296" alt="image" src="https://github.com/user-attachments/assets/7f478425-6049-42c8-a9a5-537f50399b2b" />
+
+> Explica por qué usaste esta técnica y qué resultados esperabas obtener.
+
+Bueno, creo que en el punto anterior explique esto a gran profundidad, pero igual para aclara yo esperaba en realidad que saltara y regresara a la media original (el centro), pero luego de buscar más a fondo comprendi mucho mejor que se referia a que no importa donde vaya el salto grande, los pequeños pasos iran a su alrededor.
+
+Y la tecnica que use para esto fue básicamente el desplazamiento horizontal en la caminata aleatoria, con un poquito de vertical para que sea vea mejor.
+
+## Actividad 6
+
+> Analicemos junto el concepto de ruido Perlin analizando la figura 0.4: “A graph of Perlin noise values over time (left) and of random noise values over time (right)”.
+
+> Una vez has entendido el concepto de ruido Perlin, vas a pensar en una nueva manera de visualizarlo.
+
+> Crea un nuevo sketch en p5.js donde los visualices.
+> Explica por qué lo visualizaste de esa manera y qué resultados esperabas obtener.
