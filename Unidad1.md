@@ -1,6 +1,6 @@
 # Unidad 1: Aleatoriedad 🕷️
 
-## Actividad 1
+## Actividad 01
 
 > La aleatoriedad en el arte generativo
 
@@ -10,7 +10,7 @@ Reflexiones importantes:
 - El arte generativo sule ser muy abstracto, ya que busca como la mayoria del arte moderno espresar algo más allá de lo qiue ya es visible, en este caso la fusión de la tecnología con el arte.
 - Algo interesante del arte generativo es que al juntarse con la aleatoriedad le abre la puerta a los artistas a facilitar su trabajo, ya que pueden usar la misma "semilla" o código base y aun así generar obras complatamente distintas 
 
-## Actividad 2
+## Actividad 02
 
 > Analicemos juntos el código del ejemplo Example 0.1: A Traditional Random Walk del texto guía.
 
@@ -95,7 +95,7 @@ Para finalizar vemos el método de step que es el encargado de la caminata aleat
 
 > Ejemplo con modificaciones propias en la apariencia
 
-## Actividad 3 
+## Actividad 03 
 
 > Analicemos juntos y detenidamente este ejemplo.
 
@@ -162,7 +162,7 @@ Para esto use randomGaussian que toma valores más parecidos al de la derecha
 
 <img width="658" height="247" alt="image" src="https://github.com/user-attachments/assets/eba1a4fd-aac3-4354-a649-75bd630fbb9c" />
 
-## Actividad 4
+## Actividad 04
 
 Analicemos juntos y detenidamente este ejemplo.
 Crea un nuevo sketch en p5.js que represente una distribución normal, pero visualizándola de manera diferente a la del ejemplo.
@@ -189,7 +189,7 @@ function draw() {
 
 <img width="831" height="540" alt="image" src="https://github.com/user-attachments/assets/0463da61-682f-4cba-9ba7-1a60dd63d5c5" />
 
-## Actividad 5
+## Actividad 05
 
 > Analicemos juntos y detenidamente el concepto de Lévy flight.
 
@@ -283,11 +283,94 @@ Bueno, creo que en el punto anterior explique esto a gran profundidad, pero igua
 
 Y la tecnica que use para esto fue básicamente el desplazamiento horizontal en la caminata aleatoria, con un poquito de vertical para que sea vea mejor.
 
-## Actividad 6
+## Actividad 06
 
 > Analicemos junto el concepto de ruido Perlin analizando la figura 0.4: “A graph of Perlin noise values over time (left) and of random noise values over time (right)”.
+
+Según lo que entendí en estas figuras, el ruido de Perlin se trata de cambios más leves, en cambio el ruido random real es básicamente caos total. 
 
 > Una vez has entendido el concepto de ruido Perlin, vas a pensar en una nueva manera de visualizarlo.
 
 > Crea un nuevo sketch en p5.js donde los visualices.
+
+Mi sketch:
+
+```js
+class Box {
+constructor(x,y,z,scl,speed,noiseOffset){
+  this.pos= createVector(x,y,z);
+  this.noiseOffset = noiseOffset;
+  this.scl=scl;
+  this.speed= speed;
+  this.t=0;
+ }  
+
+  update (){
+  let n = noise(
+ this.noiseOffset.x + this.t * this.speed,
+ this.noiseOffset.y + this.t * this.speed,
+ this.t * this.speed * 0.5
+ ); 
+    this.pos.z =map(n, 0, 1, -this.scl, this.scl);
+    this.t += 0.05;
+  }
+  
+  display() {
+    noStroke();
+    let r= map(this.pos.z, -this.scl, this.scl, 0, 255);
+    fill(r,0,0);
+    push();
+    translate (this.pos.x,this.pos.y,this.pos.z);
+    box(size);
+    pop();
+  }
+}
+
+let boxes= [];
+let size = 10;let cols,rows;
+let margin= 50; let scl=50;
+let speed= 0.05;
+
+function setup() {
+  createCanvas(500, 500,WEBGL);
+  frameRate(30);
+  cols= (width-margin*2)/size;
+  rows= (height-margin*2)/size;
+   noiseSeed(random(1000));
+
+  for (let i=0;i<cols;i++){
+    boxes[i]=[];
+    for ( let j=0; j< rows;j++){
+      let x = -width/2+ margin +size/2+i*size;
+      let y =-height/2+ margin+ size/2+ j*size;
+      let z = 0;
+      let noiseOffset = createVector(i * 0.1, j * 0.1, 0);
+      boxes[i][j]= new Box(x, y, z, scl, speed, noiseOffset);
+    }
+  }
+}
+
+function draw() {
+  background(0);
+  orbitControl();
+
+  for (let i=0; i<cols;i++){
+    for(let j=0; j<rows; j++){
+    //  boxes [i][j].angle= m;
+      boxes[i][j].update();
+     boxes [i][j].display(); 
+    }
+  }
+  
+}
+```
+Se ve de la siguiente manera:
+<img width="622" height="617" alt="image" src="https://github.com/user-attachments/assets/d98060f4-314a-441a-843b-4c10706f32c3" />
+
+**En la imagen no se ve pero se mueve con ruido de Perlin**
+
 > Explica por qué lo visualizaste de esa manera y qué resultados esperabas obtener.
+
+Yo lo visualize de esta manera porque al ver la gráfica que se me presentó en la comparación pensé en la textura que me trasmitan los dos, senti que el ruido de Perlin era rugoso mientras que el ruido "normal" era puntudo, de alguna forma quería transmitir esa sensación y crei que sería más fácil demostrarla con 3D.
+
+## Atividad 07
