@@ -88,9 +88,11 @@ Este es el método encargado de lo que visualizamos, en este caso el punto que s
 Para finalizar vemos el método de step que es el encargado de la caminata aleatoria y de lo "matematico" donde se escoge un número random entre 0 y 4 y segúin la elección será la dirección.
 
 <img width="806" height="362" alt="image" src="https://github.com/user-attachments/assets/3d6a235f-8f47-4b5f-b696-a5abbb4e35b2" />
+
 > Foto de como se ve el ejemplo
 
 <img width="641" height="241" alt="image" src="https://github.com/user-attachments/assets/c01c2575-70ae-458e-8e47-a6d903c44186" />
+
 > Ejemplo con modificaciones propias en la apariencia
 
 ## Actividad 3 
@@ -182,6 +184,7 @@ function draw() {
   line (width/2,height,x,y);  
 }
 ```
+
 > El código es muy simple pero cumple la función de mostrar gráficamente esta distribución y se ve algo así: 
 
 <img width="831" height="540" alt="image" src="https://github.com/user-attachments/assets/0463da61-682f-4cba-9ba7-1a60dd63d5c5" />
