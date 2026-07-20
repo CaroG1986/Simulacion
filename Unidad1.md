@@ -365,7 +365,11 @@ function draw() {
 }
 ```
 Se ve de la siguiente manera:
+
 <img width="622" height="617" alt="image" src="https://github.com/user-attachments/assets/d98060f4-314a-441a-843b-4c10706f32c3" />
+
+<img width="556" height="610" alt="image" src="https://github.com/user-attachments/assets/408131a1-e942-408f-9ad8-b197411583a1" />
+
 
 **En la imagen no se ve pero se mueve con ruido de Perlin**
 
