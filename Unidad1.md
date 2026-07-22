@@ -382,3 +382,111 @@ Yo lo visualize de esta manera porque al ver la gráfica que se me presentó en 
 Para este trabajo busque temas de festivales del mundo que se relacionaran con tecnología pero no me gusto ninguno, entonces decidí ir por colombia Moda, el tema de este año es tejido infinito, que siento que se relaciona con la idea de "La incertidumbre no es ausencia de reglas" ya que a pesar de la incertidumbre del infinito de cierta forma se teje o forma con un conjunto de reglas y conceptos, además en el tema también se presenta la siguiente idea: Un hilo que se entrelaza con los demás para tejer historias, conectar mundos y transformar realidades. 
 
 Mi idea entonces que el usuario controle o maneje el hilo que conecta  
+
+let particles = [];
+let levyAlpha = 1.5;
+
+function setup() {
+ createCanvas(windowWidth, windowHeight);
+ background(10);
+ strokeWeight(1.5);
+}
+
+function draw() {
+ // Desvanecer ligeramente el fondo para efecto de "tejido infinito"
+ background(10, 5);
+
+ // Dejar una partícula nueva en la posición del mouse
+ if (frameCount % 3 === 0) {
+ particles.push(new Particle(mouseX, mouseY));
+ }
+
+ // Conectar y dibujar
+ for (let p of particles) {
+ p.connect(particles);
+ p.show();
+ }
+
+ // Limitar cantidad para no colgar el navegador
+ if (particles.length > 300) {
+ particles.splice(0, 50);
+ }
+}
+
+class Particle {
+ constructor(x, y) {
+ this.pos = createVector(x, y);
+ this.connections = [];
+ this.color = color(
+ 200 + random(55),
+ 150 + random(105),
+ 200 + random(55),
+ 80
+ );
+ }
+
+ connect(others) {
+ this.connections = []; // reiniciar cada frame
+
+ // Conexiones cortas con vecinos cercanos (trama densa)
+ for (let other of others) {
+ if (other === this) continue;
+ let d = dist(this.pos.x, this.pos.y, other.pos.x, other.pos.y);
+ if (d < 80 && random() < 0.25) {
+ this.connections.push(other);
+ }
+ }
+
+ // Levy flight: salto largo ocasional
+ if (random() < 0.015) {
+ let target = random(others);
+ if (target && target!== this) {
+ // Dirección aleatoria con distancia Levy
+ let step = pow(random(), -1 / levyAlpha) * 60;
+ let angle = random(TWO_PI);
+ let farX = this.pos.x + cos(angle) * step;
+ let farY = this.pos.y + sin(angle) * step;
+
+ // Encontrar la partícula más cercana a ese punto lejano
+ let farTarget = null;
+ let minDist = Infinity;
+ for (let o of others) {
+ if (o === this) continue;
+ let d = dist(farX, farY, o.pos.x, o.pos.y);
+ if (d < minDist) {
+ minDist = d;
+ farTarget = o;
+ }
+ }
+ if (farTarget) {
+ this.connections.push(farTarget);
+ }
+ }
+ }
+ }
+
+ show() {
+ stroke(this.color);
+ for (let c of this.connections) {
+ line(this.pos.x, this.pos.y, c.pos.x, c.pos.y);
+ }
+ }
+}
+
+function keyPressed() {
+ // Tecla R para reiniciar
+ if (key === 'r' || key === 'R') {
+ particles = [];
+ background(10);
+ }
+
+ // Flecha arriba/abajo para ajustar alpha del Levy
+ if (keyCode === UP_ARROW) {
+ levyAlpha = min(levyAlpha + 0.1, 2.5);
+ print('Levy alpha:', levyAlpha);
+ }
+ if (keyCode === DOWN_ARROW) {
+ levyAlpha = max(levyAlpha - 0.1, 1.1);
+ print('Levy alpha:', levyAlpha);
+ }
+}
