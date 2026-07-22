@@ -378,3 +378,7 @@ Se ve de la siguiente manera:
 Yo lo visualize de esta manera porque al ver la gráfica que se me presentó en la comparación pensé en la textura que me trasmitan los dos, senti que el ruido de Perlin era rugoso mientras que el ruido "normal" era puntudo, de alguna forma quería transmitir esa sensación y crei que sería más fácil demostrarla con 3D.
 
 ## Atividad 07
+
+Para este trabajo busque temas de festivales del mundo que se relacionaran con tecnología pero no me gusto ninguno, entonces decidí ir por colombia Moda, el tema de este año es tejido infinito, que siento que se relaciona con la idea de "La incertidumbre no es ausencia de reglas" ya que a pesar de la incertidumbre del infinito de cierta forma se teje o forma con un conjunto de reglas y conceptos, además en el tema también se presenta la siguiente idea: Un hilo que se entrelaza con los demás para tejer historias, conectar mundos y transformar realidades. 
+
+Mi idea entonces que el usuario controle o maneje el hilo que conecta  
