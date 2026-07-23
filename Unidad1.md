@@ -383,71 +383,173 @@ Para este trabajo busque temas de festivales del mundo que se relacionaran con t
 
 Mi idea entonces que el usuario controle o maneje el hilo que conecta  
 
+```js
+// ─── TEJIDO INFINITO — Colombia Moda 2026 ───
+// La incertidumbre no es ausencia de reglas.
+// Diferentes formas de aleatoriedad producen diferentes comportamientos.
+// El usuario enhebra y transforma la trama.
+
 let particles = [];
 let levyAlpha = 1.5;
+let autoSpawn = true; // genera partículas automáticamente
+let mouseInfluence = 0; // qué tan cerca está el mouse (0..1)
+let maxParticles = 400;
 
 function setup() {
  createCanvas(windowWidth, windowHeight);
  background(10);
- strokeWeight(1.5);
+ strokeWeight(1.2);
+
+ // Población inicial: 80 partículas sembradas aleatoriamente
+ for (let i = 0; i < 80; i++) {
+ particles.push(new Particle(random(width), random(height)));
+ }
 }
 
 function draw() {
- // Desvanecer ligeramente el fondo para efecto de "tejido infinito"
- background(10, 5);
+ // Desvanecimiento sutil: el tejido se "cose" sobre sí mismo
+ background(10, 18);
 
- // Dejar una partícula nueva en la posición del mouse
- if (frameCount % 3 === 0) {
- particles.push(new Particle(mouseX, mouseY));
+ // ── 1. Calcular influencia del mouse ──
+ // Si el mouse está dentro del canvas, medimos qué tan "cerca" del tejido está
+ if (mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height) {
+ // Buscar la partícula más cercana al mouse
+ let minD = Infinity;
+ for (let p of particles) {
+ let d = dist(mouseX, mouseY, p.pos.x, p.pos.y);
+ if (d < minD) minD = d;
+ }
+ // Mapear: distancia 0 → influencia 1, distancia 200+ → influencia 0
+ mouseInfluence = constrain(map(minD, 0, 200, 1, 0), 0, 1);
+ } else {
+ mouseInfluence = 0;
  }
 
- // Conectar y dibujar
+ // ── 2. Generar nuevas partículas ──
+ if (autoSpawn && frameCount % 8 === 0 && particles.length < maxParticles) {
+ // Nacen en bordes o en posiciones aleatorias, como hebras que entran al telar
+ let x, y;
+ if (random() < 0.4) {
+ // desde un borde
+ let side = floor(random(4));
+ if (side === 0) { x = random(width); y = 0; }
+ else if (side === 1) { x = random(width); y = height; }
+ else if (side === 2) { x = 0; y = random(height); }
+ else { x = width; y = random(height); }
+ } else {
+ x = random(width);
+ y = random(height);
+ }
+ particles.push(new Particle(x, y));
+ }
+
+ // Si el mouse está activo, también soltar partículas desde el cursor
+ if (mouseInfluence > 0.1 && frameCount % 3 === 0 && particles.length < maxParticles) {
+ // La posición del mouse se convierte en "aguja" que introduce hebras
+ let offset = 15;
+ let px = mouseX + random(-offset, offset);
+ let py = mouseY + random(-offset, offset);
+ particles.push(new Particle(px, py));
+ }
+
+ // ── 3. Actualizar y dibujar cada partícula ──
  for (let p of particles) {
+ p.update();
  p.connect(particles);
  p.show();
  }
 
- // Limitar cantidad para no colgar el navegador
- if (particles.length > 300) {
- particles.splice(0, 50);
+ // ── 4. Poda suave ──
+ if (particles.length > maxParticles) {
+ particles.splice(0, 30);
  }
 }
 
+// ─── CLASE PARTÍCULA / HEBRA ───
 class Particle {
  constructor(x, y) {
  this.pos = createVector(x, y);
+ this.vel = createVector(0, 0);
  this.connections = [];
- this.color = color(
- 200 + random(55),
- 150 + random(105),
- 200 + random(55),
- 80
+ // Paleta textil: tonos tierra, índigo, carmesí, oro
+ this.baseColor = color(
+ 180 + random(75), // R: 180–255
+ 120 + random(100), // G: 120–220
+ 160 + random(80), // B: 160–240
+ 70
  );
+ this.age = 0;
+ }
+
+ update() {
+ this.age++;
+
+ // Movimiento browniano (micro-temblor del hilo)
+ this.vel.x += random(-0.3, 0.3);
+ this.vel.y += random(-0.3, 0.3);
+
+ // Levy flight ocasional: salto largo que representa un "hilo que cruza el telar"
+ if (random() < 0.008) {
+ let step = pow(random(), -1 / levyAlpha) * 80;
+ let angle = random(TWO_PI);
+ this.vel.x += cos(angle) * step * 0.05;
+ this.vel.y += sin(angle) * step * 0.05;
+ }
+
+ // Si el mouse está cerca, las hebras son atraídas suavemente
+ if (mouseInfluence > 0.1) {
+ let attract = createVector(mouseX - this.pos.x, mouseY - this.pos.y);
+ let d = attract.mag();
+ if (d > 0 && d < 250) {
+ attract.setMag(0.15 * mouseInfluence * (1 - d / 250));
+ this.vel.add(attract);
+ }
+ }
+
+ // Amortiguación para que no explote
+ this.vel.mult(0.96);
+ this.pos.add(this.vel);
+
+ // Rebote suave en bordes (como hilos que se devuelven en el telar)
+ if (this.pos.x < 0) { this.pos.x = 0; this.vel.x *= -0.5; }
+ if (this.pos.x > width) { this.pos.x = width; this.vel.x *= -0.5; }
+ if (this.pos.y < 0) { this.pos.y = 0; this.vel.y *= -0.5; }
+ if (this.pos.y > height) { this.pos.y = height; this.vel.y *= -0.5; }
  }
 
  connect(others) {
- this.connections = []; // reiniciar cada frame
+ this.connections = [];
 
- // Conexiones cortas con vecinos cercanos (trama densa)
+ // Umbral de conexión: se reduce (más exigente) cuando el mouse influye
+ // para que el tejido se vuelva más "preciso" cerca del usuario
+ let baseDist = 60;
+ let thresholdDist = mouseInfluence > 0.2
+? baseDist * (1 + mouseInfluence * 0.4) // hasta ~128 px
+: baseDist;
+
+ // Probabilidad base de conexión
+ let baseProb = mouseInfluence > 0.2
+? 0.25 + mouseInfluence * 0.2 // hasta ~0.45
+: 0.12;
+
+ // Conexiones con vecinos cercanos
  for (let other of others) {
  if (other === this) continue;
  let d = dist(this.pos.x, this.pos.y, other.pos.x, other.pos.y);
- if (d < 80 && random() < 0.25) {
+ if (d < thresholdDist && random() < baseProb) {
  this.connections.push(other);
  }
  }
 
- // Levy flight: salto largo ocasional
- if (random() < 0.015) {
+ // Levy flight: conexión larga ocasional (la "hebra que cruza todo el tejido")
+ if (random() < 0.008 + mouseInfluence * 0.006) {
  let target = random(others);
  if (target && target!== this) {
- // Dirección aleatoria con distancia Levy
- let step = pow(random(), -1 / levyAlpha) * 60;
+ let step = pow(random(), -1 / levyAlpha) * 70;
  let angle = random(TWO_PI);
  let farX = this.pos.x + cos(angle) * step;
  let farY = this.pos.y + sin(angle) * step;
 
- // Encontrar la partícula más cercana a ese punto lejano
  let farTarget = null;
  let minDist = Infinity;
  for (let o of others) {
@@ -458,7 +560,7 @@ class Particle {
  farTarget = o;
  }
  }
- if (farTarget) {
+ if (farTarget && minDist < 120) {
  this.connections.push(farTarget);
  }
  }
@@ -466,21 +568,46 @@ class Particle {
  }
 
  show() {
- stroke(this.color);
+ // Color se vuelve más brillante con la edad y cerca del mouse
+let brightness = 1 + this.age * 0.0005 + mouseInfluence * 0.15;
+ let c = color(
+ min(255, red(this.baseColor) * brightness),
+ min(255, green(this.baseColor) * brightness),
+ min(255, blue(this.baseColor) * brightness),
+ // opacidad: más visible si está conectada o cerca del mouse
+ 40 + mouseInfluence * 20 + (this.connections.length > 0? 10: 0)
+ );
+ stroke(c);
+
+ // Grosor de línea: más grueso si el mouse está cerca (el hilo se "tensa")
+ let sw = mouseInfluence > 0.2
+? 1.0 + mouseInfluence * 0.8
+: 0.8;
+ strokeWeight(sw);
+
  for (let c of this.connections) {
  line(this.pos.x, this.pos.y, c.pos.x, c.pos.y);
  }
+
+ // Punto pequeño en cada partícula (el "nudo" del tejido)
+ noStroke();
+ fill(255, 255, 255, 20 + mouseInfluence * 40);
+ circle(this.pos.x, this.pos.y, 2 + mouseInfluence * 2);
  }
 }
 
+// ─── INTERACCIÓN TECLADO ───
 function keyPressed() {
- // Tecla R para reiniciar
+ // R → reiniciar
  if (key === 'r' || key === 'R') {
  particles = [];
  background(10);
+ for (let i = 0; i < 80; i++) {
+ particles.push(new Particle(random(width), random(height)));
+ }
  }
 
- // Flecha arriba/abajo para ajustar alpha del Levy
+ // ↑↓ → ajustar Levy alpha (forma de la incertidumbre)
  if (keyCode === UP_ARROW) {
  levyAlpha = min(levyAlpha + 0.1, 2.5);
  print('Levy alpha:', levyAlpha);
@@ -489,4 +616,15 @@ function keyPressed() {
  levyAlpha = max(levyAlpha - 0.1, 1.1);
  print('Levy alpha:', levyAlpha);
  }
+
+ // Barra espaciadora → pausa/reanuda generación automática
+ if (key === ' ') {
+ autoSpawn =!autoSpawn;
+ print('Auto-spawn:', autoSpawn);
+ }
 }
+
+function windowResized() {
+ resizeCanvas(windowWidth, windowHeight);
+}
+```
