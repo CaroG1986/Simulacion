@@ -381,6 +381,8 @@ Yo lo visualize de esta manera porque al ver la gráfica que se me presentó en 
 
 Para este trabajo busque temas de festivales del mundo que se relacionaran con tecnología pero no me gusto ninguno, entonces decidí ir por colombia Moda, el tema de este año es tejido infinito, que siento que se relaciona con la idea de "La incertidumbre no es ausencia de reglas" ya que a pesar de la incertidumbre del infinito de cierta forma se teje o forma con un conjunto de reglas y conceptos, además en el tema también se presenta la siguiente idea: Un hilo que se entrelaza con los demás para tejer historias, conectar mundos y transformar realidades. 
 
+[Colombia moda] (https://colombiamoda.com/concepto/)
+
 Mi idea entonces que el usuario controle o maneje el hilo que conecta ese tejido, pero para que sea más interactivo desde un inicio quería que desde un inicio hubieran particulas solitarias por el espacio que se Conectarán de a poco entre ellas pero que al interactuar el usuario se genere un tejido más concreto. Para esto estuve hablando con la IA a partir de lo siguiente: 
 
 > Estoy planeando una experiencia interactiva en p5js para la feria de Colombia moda, cuyo tema este  año es "tejido infinito", y además quiero unirlo con la siguiente idea :La incertidumbre no es ausencia de reglas. Diferentes formas de aleatoriedad producen diferentes comportamientos y posibilidades. Por otra parte es importante que el usuario pueda interactuar y me gustaría que el usuario de cierta forma maneje el hilo que "entrelaza con los demás para tejer historias, conectar mundos y transformar realidades.
