@@ -660,4 +660,14 @@ Ahi básicamente la velocidad cambia de forma random lo que permite que las part
 - Tendencia: yo la veo en dos partes, en cuanto al código en la caminata aleatoria lo que pasa es que se añade el pequeño cambio de velocidad a algo ya establecido (no vuelve a cero) lo que con el paso del tiempo lleva a una trayectoria propia pero tambié lo veo al momento de interacción cuando las particulas tienden a ir según la posición del mouse.
 - Normalidad: los recorridos y conexiones suelen seguir un patrón donde van a particulas más cercanas, es cierto que hay un salto de levy pero la probabilidad de este es muy pequeña.
 - Excepción: Esto ocurre con lo que he mencionado antes del levy flight que de vez en cuando cambia el patron del tejido.
-- Influencia: El usuario influye en la trayectoria de las particulas, la forma del tejido y los colores. 
+- Influencia: El usuario influye en la trayectoria de las particulas, la forma del tejido y los colores.
+
+| Criterio | Sí | No |
+|----------|:--:|:--:|
+| Encargo completo: interpreto los cinco momentos dentro de un mismo sistema visual. | si | ☐ | 
+| Simulación con intención: utilizo al menos tres conceptos de la unidad para comunicar las ideas del encargo. | si | ☐ |
+| Interacción significativa: la interacción modifica el comportamiento o las probabilidades del sistema, que también funciona sin intervención. | si | ☐ |
+| Prototipo funcional: la experiencia puede ejecutarse y recorrerse completa sin errores que impidan comprenderla. | si | ☐ |
+| Proceso documentado: la bitácora evidencia avances, decisiones, dificultades, soluciones, uso de IA y enlace al prototipo. | si | ☐ |
+
+Nota: 
