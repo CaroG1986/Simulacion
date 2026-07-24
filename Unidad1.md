@@ -381,13 +381,13 @@ Yo lo visualize de esta manera porque al ver la gráfica que se me presentó en 
 
 Para este trabajo busque temas de festivales del mundo que se relacionaran con tecnología pero no me gusto ninguno, entonces decidí ir por colombia Moda, el tema de este año es tejido infinito, que siento que se relaciona con la idea de "La incertidumbre no es ausencia de reglas" ya que a pesar de la incertidumbre del infinito de cierta forma se teje o forma con un conjunto de reglas y conceptos, además en el tema también se presenta la siguiente idea: Un hilo que se entrelaza con los demás para tejer historias, conectar mundos y transformar realidades. 
 
-Mi idea entonces que el usuario controle o maneje el hilo que conecta  
+Mi idea entonces que el usuario controle o maneje el hilo que conecta ese tejido, pero para que sea más interactivo desde un inicio quería que desde un inicio hubieran particulas solitarias por el espacio que se Conectarán de a poco entre ellas pero que al interactuar el usuario se genere un tejido más concreto. Para esto estuve hablando con la IA a partir de lo siguiente: 
+
+> Estoy planeando una experiencia interactiva en p5js para la feria de Colombia moda, cuyo tema este  año es "tejido infinito", y además quiero unirlo con la siguiente idea :La incertidumbre no es ausencia de reglas. Diferentes formas de aleatoriedad producen diferentes comportamientos y posibilidades. Por otra parte es importante que el usuario pueda interactuar y me gustaría que el usuario de cierta forma maneje el hilo que "entrelaza con los demás para tejer historias, conectar mundos y transformar realidades.
+
+Tras un rato de algunos cambios esta fue la idea que más se parecia a lo que quería: 
 
 ```js
-// ─── TEJIDO INFINITO — Colombia Moda 2026 ───
-// La incertidumbre no es ausencia de reglas.
-// Diferentes formas de aleatoriedad producen diferentes comportamientos.
-// El usuario enhebra y transforma la trama.
 
 let particles = [];
 let levyAlpha = 1.5;
@@ -628,3 +628,17 @@ function windowResized() {
  resizeCanvas(windowWidth, windowHeight);
 }
 ```
+
+<img width="941" height="642" alt="image" src="https://github.com/user-attachments/assets/81c2b6a3-af95-4afa-8b4a-3034138b93e4" />
+
+Me gustaba mucho que si se viera como un tejido que el usuario manipula a voluntad sin embargo tuve varias anotaciones:
+- Después de que el usuario interactua todo quedaba sobre saturado, lo que hacia todo más lento y generaba mucho ruido visual.
+- Solo se podía seguir el movimiento del mouse pero queria que tuviera algo más como valor agregado, como alterar el color.
+
+Entonces volvi a hablar con la IA para corregir esto y el segundo punto se resolvió de una forma cheveré, ya que ahora al hacer click se generan ondas de color que se expanden y le añaden profundidad a la parte de "nuevas historias" del tema de Colombia moda, ya que ahora estamos hablando de historias de color. Sin embargo casi nos damos a puño con el tema de la saturación. Las soluciones iniciales fueron directamente borrar todo en el canvas, lo cual no haría a la experiencia realmente independiente del usuario, así que después de luchar se llegó a la propuesta de establecer una clase de estado de reposo al que el sistema tiende siempre y cuando no lo alteren con interacción del mouse, en el cual las particulas desaparecen de a pocos hasta llegar al valor minimo (en este caso 120) y así todo el tiempo se ve algo en el canvas. Como dato adicional con las flechas se puede alterar la probabilidad del Levy flight pero como la resolución del canvas es 9:16 y eso es más grande de lo usual, las felchas se usan para bajr y subir por el canvas y por eso no se funciona, igual no se nota mucho, es básicamente que entre más probabilidad entonces las particulas hacen trayectos más largos.
+
+### [Link de la interacción] (https://editor.p5js.org/CaroG1986/sketches/u5kTobdKn) 
+
+<img width="908" height="617" alt="image" src="https://github.com/user-attachments/assets/ec02012b-4996-4f24-8afa-81d5f034047d" />
+
+Bueno ahora vamos a los conceptos y momentos y como se aplicaron:
