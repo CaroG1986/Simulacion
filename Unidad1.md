@@ -670,4 +670,4 @@ Ahi básicamente la velocidad cambia de forma random lo que permite que las part
 | Prototipo funcional: la experiencia puede ejecutarse y recorrerse completa sin errores que impidan comprenderla. | si | ☐ |
 | Proceso documentado: la bitácora evidencia avances, decisiones, dificultades, soluciones, uso de IA y enlace al prototipo. | si | ☐ |
 
-Nota: 
+Nota: 50
