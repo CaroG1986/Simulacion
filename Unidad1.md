@@ -641,4 +641,23 @@ Entonces volvi a hablar con la IA para corregir esto y el segundo punto se resol
 
 <img width="908" height="617" alt="image" src="https://github.com/user-attachments/assets/ec02012b-4996-4f24-8afa-81d5f034047d" />
 
-Bueno ahora vamos a los conceptos y momentos y como se aplicaron:
+Bueno ahora vamos a los conceptos y momentos y como se aplicaron. **Primero los conceptos utilizados fueron:**
+
+- Levy fligth, de los más obvios ya que este generaba a veces conexiones con particulas más lejanas, pero la mayoria del tiempo se conectaban con las más cercanas, eso es lo que daba esa apariencia al tejido de ser más "desordenado" a veces.
+- Distribuciones de probabilidad, en este caso la mayoría del programa funciona con random lo que genera distribuciones uniformes, por ejemplo con la posición inicial de las particulas, la velocidad de estas y las conecciones entre ellas.
+- Caminata aleatoria, esta para mi es la menos "obvia" sin embargo si esta presente en esta parte del código:
+
+```js
+this.vel.x += random(-0.3, 0.3);
+this.vel.y += random(-0.3, 0.3);
+```
+
+Ahi básicamente la velocidad cambia de forma random lo que permite que las particulas no hagan una caminata constante, si no que cambie las distancias que recorre loq ue le da más vida.
+
+**Ahora los momentos que se pueden ver:**
+
+- Posibilidad: en este código se usa mucho la función random, la cual no tiene prefereincias por lo que cualquier dirección es posible, además de que el usuario en su puede recorrer todo el canvas.
+- Tendencia: yo la veo en dos partes, en cuanto al código en la caminata aleatoria lo que pasa es que se añade el pequeño cambio de velocidad a algo ya establecido (no vuelve a cero) lo que con el paso del tiempo lleva a una trayectoria propia pero tambié lo veo al momento de interacción cuando las particulas tienden a ir según la posición del mouse.
+- Normalidad: los recorridos y conexiones suelen seguir un patrón donde van a particulas más cercanas, es cierto que hay un salto de levy pero la probabilidad de este es muy pequeña.
+- Excepción: Esto ocurre con lo que he mencionado antes del levy flight que de vez en cuando cambia el patron del tejido.
+- Influencia: El usuario influye en la trayectoria de las particulas, la forma del tejido y los colores. 
