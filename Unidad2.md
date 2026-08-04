@@ -51,3 +51,20 @@ Yo quiero explorar la tensión entre las partes del mapa del alma de Carl Jung
 > Seleccioné __________ porque quiero hacer perceptible __________. Espero que produzca __________.
 
 Bueno ahora las desiones que tome: 
+
+Tipos de particulas 
+
+Decidi hacer 5 tipos que presentan cada elemento del mapa del alma
+
+- Ego: Amarillo y medio grandes
+- Persona: Rojo y las más grandes
+- Sombra: Azul oscuro y las más pequeñas
+- Imago: Rosita 
+- Anima / Animus: Morado 
+
+
+<img width="616" height="545" alt="Captura de pantalla 2026-08-04 021343" src="https://github.com/user-attachments/assets/99c4140d-b974-4eeb-ac76-2479a144145b" />
+
+<img width="946" height="606" alt="image" src="https://github.com/user-attachments/assets/8dc1cc32-62c0-45df-81bf-5dd28b6f6be6" />
+
+<img width="1257" height="697" alt="image" src="https://github.com/user-attachments/assets/f627a106-104a-4fe9-98db-0d3e764e8085" />
