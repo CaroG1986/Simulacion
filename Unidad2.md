@@ -62,7 +62,7 @@ Decidi hacer 5 tipos que presentan cada elemento del mapa del alma
 - Imago: Rosita 
 - Anima / Animus: Morado 
 
-Para hacer después la matriz me va a hacer en Cómo se comportarían esos elementos dentro del mapa, Según yo los que tendría mayor reacción entre sí sería la persona y el ego, porque el ego es la conciencia y la persona de la máscara que mostramos, por lo que nuestra conciencia serviría como una clase de máscara socialmente aceptada que le damos al mundo.
+Para hacer después la matriz me va a hacer en cómo se comportarían esos elementos dentro del mapa, Según yo los que tendría mayor reacción entre sí sería la persona y el ego, porque el ego es la conciencia y la persona de la máscara que mostramos, por lo que nuestra conciencia serviría como una clase de máscara socialmente aceptada que le damos al mundo.
 
 Pero para mí una de las relaciones más importantes son las de la sombra que son esos puntos muy oscuros que se ven a veces persiguiendo o cerca de las partículas de ego y persona, ya que la sombra se trata de aspectos del inconsciente que quieren salir al exterior pero evitamos o ocultamos. Y finalmente los dos partículas se tratan de El imago y el anima que estás en sí son imágenes idealizadas de nuestros padres y de la pareja que buscamos en un futuro entonces mi planteamiento es que el ego y la persona se atraigan entre ellas pero que también estén buscando constantemente estos ideales pero que estos se escapen de su realidad.
 
@@ -73,13 +73,14 @@ Entonces desde ahí saqué más o menos una matriz y para probarla para ver qué
 Finalmente la matriz quedo algo así: 
 
 <img width="1257" height="697" alt="image" src="https://github.com/user-attachments/assets/f627a106-104a-4fe9-98db-0d3e764e8085" />
-
+<a name="exp5"></a>
 Pero hubo un pequeño problema. **SE VEÍA ASQUEROSOOOOOOOO**
 
 <img width="628" height="561" alt="Captura de pantalla 2026-08-04 012024" src="https://github.com/user-attachments/assets/c5e89d21-0f06-43eb-a96b-627f14af4a08" />
 
 Entonces después de vomitar un rato me pelee un poco con la ia y llegamos a acuerdos: 
 
+<a name="exp3"></a>
 Parece que uno de los problemas era que las partículas siempre tendrían a irse a los extremos del círculo y dejado en el centro vacío por lo que por un rato intentó poner más o menos una fuerza gravedad extra acercar al centro el problema fue que eso generó que luego se concentraron muchos en el centro y dejaron completamente quietos y como la idea era que hubiera movimiento Entonces no tenía ningún sentido.
 
 <img width="616" height="545" alt="Captura de pantalla 2026-08-04 021343" src="https://github.com/user-attachments/assets/99c4140d-b974-4eeb-ac76-2479a144145b" />
@@ -89,7 +90,7 @@ Pero al parecer había una solución y era que las partículas tuvieran una cant
 Además de eso solucionamos unas cosas visuales ya que algunas partículas que se veían ASQUEROSAS. Y después de eso dije "Hey Pero qué tal si fuera un poco más interactivo" y entonces le incluí un botón en el cual se genera una proyección donde lo que ocurre según es que las cosas que están en el subconsciente intentan salir a la conciencia y vuelven todo un despelote
 
 <img width="936" height="577" alt="image" src="https://github.com/user-attachments/assets/bfbb5783-5349-49bd-ad7d-41bc262359ea" />
-
+<a name="exp4"></a>
 > Ahí se veía más decente y tenia más sentido con lo que quería
 
 <img width="647" height="567" alt="image" src="https://github.com/user-attachments/assets/dbefb604-a6f7-4985-be1e-4704fb10cc95" />
@@ -112,4 +113,10 @@ Una cosa es que sí siento que todo tiene sentido con lo que yo quería sin emba
 |-----------|-----------|-----------|----------|
 | La intención es clara y perceptible en el comportamiento. | 20%   | 4    | Si hay intención pero no sé que tan clara sea [Aquí](#exp1)    |
 | Los tipos, cantidades, matriz y parámetros están justificados desde la intención.   | 25%    | 5   | Eso si lo tengo bien indicado [En esta parte](#exp2)  |
-| Comprendo y puedo modificar el funcionamiento técnico del sistema. | 20%   | 4    | Si hay intención pero no sé que tan clara sea [Aquí](#exp1)    |
+| Comprendo y puedo modificar el funcionamiento técnico del sistema. | 20%   |  4.5  | Aquí en mis explicaciones se ve maso [Aquí](#exp3)    |
+| El sistema produce variaciones con una identidad reconocible. | 15%  |  5  | Siempre tienen una identidad muy marcada [Aquí](#exp4)    |
+| Experimenté, comparé, seleccioné y descarté con criterios claros. | 10%   |  5  | Aquí hablo de las versiones [Aquí](#exp5)    |
+| Puedo distinguir y sustentar lo diseñado y lo emergente. | 10%   |  5  | Si, comprendo que aspectos puedo controlar y cuales no|
+
+
+**NOTA:** 0.8 + 1,25 +0.9 + 0.75 + 0.5 +0.5 = **4.7**
