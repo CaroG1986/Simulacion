@@ -49,7 +49,7 @@ Yo quiero explorar la tensión entre las partes del mapa del alma de Carl Jung
 > Para cada decisión responde:
 >
 > Seleccioné __________ porque quiero hacer perceptible __________. Espero que produzca __________.
-
+<a name="exp2"></a>
 Bueno ahora las desiones que tome: 
 
 Tipos de particulas 
@@ -110,5 +110,6 @@ Una cosa es que sí siento que todo tiene sentido con lo que yo quería sin emba
 
 | Criterio  | Peso      |Valoración |   Aporte |
 |-----------|-----------|-----------|----------|
-| La intención es clara y perceptible en el comportamiento. | 20%   | 4    | [este](#exp1)    |
-| dato D    | dato E    | dato F    | pepe     |
+| La intención es clara y perceptible en el comportamiento. | 20%   | 4    | Si hay intención pero no sé que tan clara sea [Aquí](#exp1)    |
+| Los tipos, cantidades, matriz y parámetros están justificados desde la intención.   | 25%    | 5   | Eso si lo tengo bien indicado [En esta parte](#exp2)  |
+| Comprendo y puedo modificar el funcionamiento técnico del sistema. | 20%   | 4    | Si hay intención pero no sé que tan clara sea [Aquí](#exp1)    |
