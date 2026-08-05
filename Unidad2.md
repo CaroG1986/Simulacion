@@ -72,6 +72,16 @@ Entonces desde ahí saqué más o menos una matriz y para probarla para ver qué
 
 Finalmente la matriz quedo algo así: 
 
+<img width="1257" height="697" alt="image" src="https://github.com/user-attachments/assets/f627a106-104a-4fe9-98db-0d3e764e8085" />
+
+Pero hubo un pequeño problema. **SE VEÍA ASQUEROSOOOOOOOO**
+
+<img width="628" height="561" alt="Captura de pantalla 2026-08-04 012024" src="https://github.com/user-attachments/assets/c5e89d21-0f06-43eb-a96b-627f14af4a08" />
+
+Entonces después de vomitar un rato me pelee un poco con la ia y llegamos a acuerdos: 
+
+Parece que uno de los problemas era que las partículas siempre tendrían a irse a los extremos del círculo y dejado en el centro vacío por lo que por un rato intentó poner más o menos una fuerza gravedad extra acercar al centro el problema fue que eso generó que luego se concentraron muchos en el centro y dejaron completamente quietos y como la idea era que hubiera movimiento Entonces no tenía ningún sentido.
+
 <img width="616" height="545" alt="Captura de pantalla 2026-08-04 021343" src="https://github.com/user-attachments/assets/99c4140d-b974-4eeb-ac76-2479a144145b" />
 
-<img width="1257" height="697" alt="image" src="https://github.com/user-attachments/assets/f627a106-104a-4fe9-98db-0d3e764e8085" />
+Pero al parecer había una solución y era que las partículas tuvieran una cantidad más uniforme entre ellas y no como yo pensaba que era hacer que hubiera menos Azules y más de otras porque si no pues si van a conectar un montón en ciertas partes y no habia nada de movimiento. Por eso las particulas en este caso estan en cantidades más uniformes, aunque los tamaños si son diferenets para que resalten más.
