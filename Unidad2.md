@@ -85,3 +85,30 @@ Parece que uno de los problemas era que las partículas siempre tendrían a irse
 <img width="616" height="545" alt="Captura de pantalla 2026-08-04 021343" src="https://github.com/user-attachments/assets/99c4140d-b974-4eeb-ac76-2479a144145b" />
 
 Pero al parecer había una solución y era que las partículas tuvieran una cantidad más uniforme entre ellas y no como yo pensaba que era hacer que hubiera menos Azules y más de otras porque si no pues si van a conectar un montón en ciertas partes y no habia nada de movimiento. Por eso las particulas en este caso estan en cantidades más uniformes, aunque los tamaños si son diferenets para que resalten más.
+
+Además de eso solucionamos unas cosas visuales ya que algunas partículas que se veían ASQUEROSAS. Y después de eso dije "Hey Pero qué tal si fuera un poco más interactivo" y entonces le incluí un botón en el cual se genera una proyección donde lo que ocurre según es que las cosas que están en el subconsciente intentan salir a la conciencia y vuelven todo un despelote
+
+<img width="936" height="577" alt="image" src="https://github.com/user-attachments/assets/bfbb5783-5349-49bd-ad7d-41bc262359ea" />
+
+> Ahí se veía más decente y tenia más sentido con lo que quería
+
+<img width="647" height="567" alt="image" src="https://github.com/user-attachments/assets/dbefb604-a6f7-4985-be1e-4704fb10cc95" />
+
+> Y esta es una proyección.
+
+Cómo datos extra la idea es que todo empieza de posiciones aleatorias nada tienen ninguna clase de trayectoria fija, lo único que sí decidí que estuviera fijo es la fricción porque siento que con la que tiene actualmente se ve más como un movimiento etéreo y no tanto como algo muy rápido o colapsante.  De resto en cuanto a las distancias si se salen de cierto radio no interactúan pero al entrar dentro del radio se aumenta la fuerza de atracción y ya al momento en el que está muy cerca frena para que no se vea como un colapso sino que se viera como que están juntos como un grupo.
+
+Una cosa es que sí siento que todo tiene sentido con lo que yo quería sin embargo algo que me hubiera gustado sería ponerle muchas más partículas pero si uno se excede con las partículas free fire explota entonces fue mejor dejarlo así como estaba igual siento que tiene sentido con lo que quería.
+
+(Aquí esta el link de la experiencia)[https://editor.p5js.org/CaroG1986/full/CEyOigfua]
+
+(Y como extra hice lo mismo pero las proyecciones se sincronizan con la canción de BTS que inspiró este trabajo)[https://editor.p5js.org/CaroG1986/full/cgBdXMTOf] 
+
+<img width="552" height="507" alt="image" src="https://github.com/user-attachments/assets/223f81b4-5a37-4ee0-85c3-6d3b1b9ad96b" />
+
+<img width="520" height="487" alt="image" src="https://github.com/user-attachments/assets/ee3f1cfd-dce0-41c6-bec3-c4f1a257f5de" />
+
+| Columna 1 | Columna 2 | Columna 3 |
+|-----------|-----------|-----------|
+| dato A    | dato B    | dato C    |
+| dato D    | dato E    | dato F    |
