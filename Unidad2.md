@@ -62,9 +62,16 @@ Decidi hacer 5 tipos que presentan cada elemento del mapa del alma
 - Imago: Rosita 
 - Anima / Animus: Morado 
 
+Para hacer después la matriz me va a hacer en Cómo se comportarían esos elementos dentro del mapa, Según yo los que tendría mayor reacción entre sí sería la persona y el ego, porque el ego es la conciencia y la persona de la máscara que mostramos, por lo que nuestra conciencia serviría como una clase de máscara socialmente aceptada que le damos al mundo.
 
-<img width="616" height="545" alt="Captura de pantalla 2026-08-04 021343" src="https://github.com/user-attachments/assets/99c4140d-b974-4eeb-ac76-2479a144145b" />
+Pero para mí una de las relaciones más importantes son las de la sombra que son esos puntos muy oscuros que se ven a veces persiguiendo o cerca de las partículas de ego y persona, ya que la sombra se trata de aspectos del inconsciente que quieren salir al exterior pero evitamos o ocultamos. Y finalmente los dos partículas se tratan de El imago y el anima que estás en sí son imágenes idealizadas de nuestros padres y de la pareja que buscamos en un futuro entonces mi planteamiento es que el ego y la persona se atraigan entre ellas pero que también estén buscando constantemente estos ideales pero que estos se escapen de su realidad.
+
+Entonces desde ahí saqué más o menos una matriz y para probarla para ver qué tal funcionaba hice un pequeño experimento con un código muy base de particular y ya de ahí empecé a mover para ver cómo me gustaría que quedara
 
 <img width="946" height="606" alt="image" src="https://github.com/user-attachments/assets/8dc1cc32-62c0-45df-81bf-5dd28b6f6be6" />
+
+Finalmente la matriz quedo algo así: 
+
+<img width="616" height="545" alt="Captura de pantalla 2026-08-04 021343" src="https://github.com/user-attachments/assets/99c4140d-b974-4eeb-ac76-2479a144145b" />
 
 <img width="1257" height="697" alt="image" src="https://github.com/user-attachments/assets/f627a106-104a-4fe9-98db-0d3e764e8085" />
