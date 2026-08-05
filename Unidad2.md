@@ -22,7 +22,7 @@ Motion 101:
 <img width="842" height="470" alt="image" src="https://github.com/user-attachments/assets/dd56d93c-59b8-47ee-bb98-113d6ef33f7d" />
 
 # Actividad 05
-
+<a name="exp1"></a>
 **Intención**
 
 >Formula la tensión:
@@ -108,7 +108,7 @@ Una cosa es que sí siento que todo tiene sentido con lo que yo quería sin emba
 
 <img width="520" height="487" alt="image" src="https://github.com/user-attachments/assets/ee3f1cfd-dce0-41c6-bec3-c4f1a257f5de" />
 
-| Columna 1 | Columna 2 | Columna 3 |
-|-----------|-----------|-----------|
-| dato A    | dato B    | dato C    |
-| dato D    | dato E    | dato F    |
+| Criterio  | Peso      |Valoración |   Aporte |
+|-----------|-----------|-----------|----------|
+| La intención es clara y perceptible en el comportamiento. | 20%   | 4    | [este](#exp1)    |
+| dato D    | dato E    | dato F    | pepe     |
