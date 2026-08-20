@@ -13,3 +13,5 @@ La verdad en un inicio no sabia que hacer pero si sabia que queria iniciar con a
 <img width="918" height="725" alt="image" src="https://github.com/user-attachments/assets/5e864deb-3fb2-49e4-8aee-fbad034fb759" />
 
 <img width="1497" height="781" alt="Captura de pantalla 2026-08-19 144708" src="https://github.com/user-attachments/assets/f74471ae-3aae-4d98-b22a-608801a9e36f" />
+
+<img width="880" height="668" alt="image" src="https://github.com/user-attachments/assets/f263a516-cb37-456d-9550-c2baa623add1" />
