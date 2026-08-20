@@ -35,3 +35,4 @@ Aquí hay combinaciones de fuerzas de atracción entre más debiles a más fuert
 |------|--------|----------|
 |Repulsión|Sentido contrario al mouse|F*disp* = (P/p)* S *disp* *E *disp*|
 |Viento| Según el componente| F *viento* = (W *xy* + W *z*) * E *viento*|
+|Radial| Hacia el mouse| <img width="474" height="83" alt="image" src="https://github.com/user-attachments/assets/84133464-16a0-44ab-a6bc-11d9ebfb3207" />|
