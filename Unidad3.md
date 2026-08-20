@@ -33,4 +33,4 @@ Aquí hay combinaciones de fuerzas de atracción entre más debiles a más fuert
 
 |Fuerza|Dirección|Ecuación|
 |------|--------|----------|
-|Repulsión|Sentido contrario al mouse|$$\vec{F}_{disp} = \left( \frac{\vec{p}}{\vert{}\vec{p}\vert{}} \right) \cdot S_{disp} \cdot E_{disp}$$|
+|Repulsión|Sentido contrario al mouse|F*disp* = (P/|p|)* S *disp* *E *disp*|
