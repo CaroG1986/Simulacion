@@ -36,3 +36,5 @@ Aquí hay combinaciones de fuerzas de atracción entre más debiles a más fuert
 |Repulsión|Sentido contrario al mouse|F*disp* = (P/p)* S *disp* *E *disp*|
 |Viento| Según el componente| F *viento* = (W *xy* + W *z*) * E *viento*|
 |Radial| Hacia el mouse| <img width="474" height="83" alt="image" src="https://github.com/user-attachments/assets/84133464-16a0-44ab-a6bc-11d9ebfb3207" />|
+|Vortice| Perpendicular al vector radial| <img width="473" height="61" alt="image" src="https://github.com/user-attachments/assets/949301e6-083b-47f5-a34e-3938bba3d8aa" />|
+|"Rayos"| Sigue el mouse pero también ocila caoticamente| F *rayos* =( F *directa* + F *caotica*) * E *rayos*|
