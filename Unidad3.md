@@ -38,3 +38,7 @@ Aquí hay combinaciones de fuerzas de atracción entre más debiles a más fuert
 |Radial| Hacia el mouse| <img width="474" height="83" alt="image" src="https://github.com/user-attachments/assets/84133464-16a0-44ab-a6bc-11d9ebfb3207" />|
 |Vortice| Perpendicular al vector radial| <img width="473" height="61" alt="image" src="https://github.com/user-attachments/assets/949301e6-083b-47f5-a34e-3938bba3d8aa" />|
 |"Rayos"| Sigue el mouse pero también ocila caoticamente| F *rayos* =( F *directa* + F *caotica*) * E *rayos*|
+|Ramificación| Tiene una dirección radial pero rota como un abanico| <img width="204" height="66" alt="image" src="https://github.com/user-attachments/assets/87c7c78f-21d5-414b-bf78-446155e8471b" />|
+|Resistencia| Opuesta a la velocidad| <img width="374" height="55" alt="image" src="https://github.com/user-attachments/assets/dffffb87-ad30-406e-bf11-32ba53f301a5" />|
+
+
