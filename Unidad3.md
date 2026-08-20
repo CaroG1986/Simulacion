@@ -14,6 +14,23 @@ Ya de ahí fue que empece a ver que fuerzas me gustaban par ami interpretación,
 
 <img width="918" height="725" alt="image" src="https://github.com/user-attachments/assets/5e864deb-3fb2-49e4-8aee-fbad034fb759" />
 
+Aquí hay combinaciones de fuerzas de atracción entre más debiles a más fuertes y la fuerza que hace que se repelan, y hacía patrones muy interesantes.
+
 <img width="1497" height="781" alt="Captura de pantalla 2026-08-19 144708" src="https://github.com/user-attachments/assets/f74471ae-3aae-4d98-b22a-608801a9e36f" />
 
 <img width="880" height="668" alt="image" src="https://github.com/user-attachments/assets/f263a516-cb37-456d-9550-c2baa623add1" />
+
+### Mapa del sistema
+
+- **Estado:** Tal como dice el enunciado de la unidad 3, el estado de cada particula es almacenado en src/simulation/createSimulation.js (positionBuffer, velocityBuffer), y esto se encarga como dice casi explicitamente de almacenar la posición y la velocidad de estas particula, alamcenados en arreys.
+
+```js
+  const positionBuffer = instancedArray(count, 'vec3');
+  const velocityBuffer = instancedArray(count, 'vec3');
+```
+
+- **Fuerzas:** Las fuerzas acumuladas en este sistema son dispersión, viento (ejes X, Y, Z), atracción y repulsión radial, vórtice, rayos (variaciones caóticas de trayectoria), ramificación fractal (Sistema L) y resistencia (fricción o drag). Varias de estas ya estaban incluidas y otras se incluyeron y modificaron.
+
+|Fuerza|Dirección|Ecuación|
+|------|--------|----------|
+|Repulsión|Sentido contrario al mouse|$$\vec{F}_{disp} = \left( \frac{\vec{p}}{\vert{}\vec{p}\vert{}} \right) \cdot S_{disp} \cdot E_{disp}$$|
