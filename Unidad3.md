@@ -33,4 +33,5 @@ Aquí hay combinaciones de fuerzas de atracción entre más debiles a más fuert
 
 |Fuerza|Dirección|Ecuación|
 |------|--------|----------|
-|Repulsión|Sentido contrario al mouse|F*disp* = (P/|p|)* S *disp* *E *disp*|
+|Repulsión|Sentido contrario al mouse|F*disp* = (P/p)* S *disp* *E *disp*|
+|Viento| Según el componente| F *viento* = (W *xy* + W *z*) * E *viento*|
