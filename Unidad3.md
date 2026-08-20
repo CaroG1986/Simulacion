@@ -10,6 +10,6 @@ La verdad en un inicio no sabia que hacer pero si sabia que queria iniciar con a
 
 <img width="969" height="766" alt="image" src="https://github.com/user-attachments/assets/98703bb8-6781-4908-b933-8e8b6372258a" />
 
-
 <img width="918" height="725" alt="image" src="https://github.com/user-attachments/assets/5e864deb-3fb2-49e4-8aee-fbad034fb759" />
 
+<img width="1497" height="781" alt="Captura de pantalla 2026-08-19 144708" src="https://github.com/user-attachments/assets/f74471ae-3aae-4d98-b22a-608801a9e36f" />
