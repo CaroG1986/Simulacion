@@ -41,4 +41,25 @@ Aquí hay combinaciones de fuerzas de atracción entre más debiles a más fuert
 |Ramificación| Tiene una dirección radial pero rota como un abanico| <img width="204" height="66" alt="image" src="https://github.com/user-attachments/assets/87c7c78f-21d5-414b-bf78-446155e8471b" />|
 |Resistencia| Opuesta a la velocidad| <img width="374" height="55" alt="image" src="https://github.com/user-attachments/assets/dffffb87-ad30-406e-bf11-32ba53f301a5" />|
 
+- **Integración:** En cuanto a la integración de las fuerzas, es importante saber que al ser este un sistema Motion 101, para que funcione en este caso es necesario asignar la masa, que en este caso se toma como 1, para que asi la aceleración sea igual a la fuerza neta. La aceleración también es el cambio de la velocidad en el tiempo, por ende para calcular la velocidad lo que se hace es multiplicar la fuerza neta por el cambio en el tiempo y se le suma la velocidad anterior, para finalmente calcular la posición con la velocidad actual por el cambio del tiempo más la posición anterior.
 
+- **Render:** Este calculo no se hace más de una vez porque la memoria del GPUweb esta compartida con la GPU del computador y también porque se separa el calculo (compute shader, el cual almacena los nuevos datos en los buffers de posición y velocidad) del dibujo (sistema de nodos que leen la información de la GPU)
+
+- **Controles:**
+| Tecla/combinación | Acción/Slider | Intención |
+|-------------------|---------------|-----------|
+| (W) | Apagar y prender la influencia del viento | Poder decidir en que partes no usar el viento |
+| Flechas horizontales | Aumentar o disminuir la infuencia del viento en x | para determinar que tanta fuerza tendrá |
+| Flechas verticales | Aumentar o disminuir la infuencia del viento en y |  para determinar que tanta fuerza tendrá |
+| 1 y 2 |  Aumentar o disminuir la infuencia del viento en z |  para determinar que tanta fuerza tendrá |
+| 3 y 4 | Controla la velocidad | Disminuir o aumentar la velocidad maxima |
+| (L) | Activa la función de los "rayos" | En realidad más que rayos e sun estado donde las particulas pueden sentirse muy o muy poco atraidas al movimeinto del mouse |
+| 5 y 6 | Disminuye o aumenta la fuerza de esos "rayos" | Esto controla que tan dispersas se ven las particulas |
+| (V) | Activa o desactiva el vortice | pararlo en los momentos necesarios |
+| 7 y 8 | Disminuye o aumenta la fuerza del vortice | pararlo en los momentos necesarios |
+| (T) | Activa el sistema de ramas | Para cambiar el momento rápidamente|
+| (C) | Color | Cambiar el color con degradados tematicos | 
+| (B) | Cambio de borde | Cambia entre 3 estados: borde firme, borde flexible y sin borde |
+| (A) | Atracción | Activa y desactiva al tenerlo presionado | 
+| (S) | Repulsión | Activa y desactiva al tenerlo presionado |
+| (D) | Repulsión (entre ellas) | es lo que ayuda a generar ondas|
