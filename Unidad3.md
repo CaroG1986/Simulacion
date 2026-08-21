@@ -88,7 +88,7 @@ Cuando el ritmo es más marcado decidi usar ondas o movimientos marcados, en cam
 | Verificación del algoritmo de fuerzas | 25 | 25 | Explique muy explicitamente todos los cambios que realize y como las utilizó en la demostración |
 | Diseño de fuerzas e intención | 20 | 20 | No hay nada previo, todo se modifica en el momento |
 | Instrumento, score e interpretación| 15 | 10 | Algunas veces voy un poco a destiempo de la canción |
-| Experimentación y criterio frente a la IA | 10 | Si, lleve registro de las cosas y fui conciente de mi proceso |
+| Experimentación y criterio frente a la IA | 10 | 10 |Si, lleve registro de las cosas y fui conciente de mi proceso |
 | Entrega técnica y documentación | 5 | 5 | Si todo esta en orden | 
 
 Nota final= 4.5
