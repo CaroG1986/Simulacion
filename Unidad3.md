@@ -22,6 +22,8 @@ Aquí hay combinaciones de fuerzas de atracción entre más debiles a más fuert
 
 <img width="880" height="668" alt="image" src="https://github.com/user-attachments/assets/f263a516-cb37-456d-9550-c2baa623add1" />
 
+<img width="720" height="630" alt="image" src="https://github.com/user-attachments/assets/b2ca2368-f35d-4145-ac90-b7ee19715c47" />
+
 ### Mapa del sistema
 
 - **Estado:** Tal como dice el enunciado de la unidad 3, el estado de cada particula es almacenado en src/simulation/createSimulation.js (positionBuffer, velocityBuffer), y esto se encarga como dice casi explicitamente de almacenar la posición y la velocidad de estas particula, alamcenados en arreys.
@@ -76,6 +78,8 @@ Aquí hay combinaciones de fuerzas de atracción entre más debiles a más fuert
 
 ### Como lo pense con la canción 
 
+Cuando el ritmo es más marcado decidi usar ondas o movimientos marcados, en cambio cuando suena más espacial decidi expandir el espacio para que se vea una mini explosión. En algunas partes cambio el color.
+
 ## Autoevaluación 
 
 | Criterio | Peso | Valoración | Explicación |
@@ -83,6 +87,8 @@ Aquí hay combinaciones de fuerzas de atracción entre más debiles a más fuert
 | Trazabilidad y comprensión del sistema | 25 | 20 | Comprendo todas las fuerzas que aplique y lo cambie, pero pueden haber un par de lineas que no identifique |
 | Verificación del algoritmo de fuerzas | 25 | 25 | Explique muy explicitamente todos los cambios que realize y como las utilizó en la demostración |
 | Diseño de fuerzas e intención | 20 | 20 | No hay nada previo, todo se modifica en el momento |
-| Instrumento, score e interpretación| 15 | 15 | pepe |
+| Instrumento, score e interpretación| 15 | 10 | Algunas veces voy un poco a destiempo de la canción |
 | Experimentación y criterio frente a la IA | 10 | Si, lleve registro de las cosas y fui conciente de mi proceso |
 | Entrega técnica y documentación | 5 | 5 | Si todo esta en orden | 
+
+Nota final= 4.5
