@@ -46,6 +46,7 @@ Aquí hay combinaciones de fuerzas de atracción entre más debiles a más fuert
 - **Render:** Este calculo no se hace más de una vez porque la memoria del GPUweb esta compartida con la GPU del computador y también porque se separa el calculo (compute shader, el cual almacena los nuevos datos en los buffers de posición y velocidad) del dibujo (sistema de nodos que leen la información de la GPU)
 
 - **Controles:**
+
 |Tecla/combinación|Acción/Slider|Intención|
 |-------------------|---------------|-----------|
 | (W) | Apagar y prender la influencia del viento | Poder decidir en que partes no usar el viento |
