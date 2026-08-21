@@ -4,7 +4,7 @@
 
 # Actividad 4 
 
-La actividad es la (siguiente) [https://carog1986.github.io/Unidad3Simulacion_ActividadFuerzas/]
+La actividad es la siguiente: [https://carog1986.github.io/Unidad3Simulacion_ActividadFuerzas/]
 
 La verdad en un inicio no sabia que hacer pero si sabia que queria iniciar con algo distinto a un cuadrado, asi que escogi un disco y su "contenedor" es una esfera.
 
