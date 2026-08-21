@@ -4,6 +4,8 @@
 
 # Actividad 4 
 
+La actividad es la (siguiente)[https://carog1986.github.io/Unidad3Simulacion_ActividadFuerzas/]
+
 La verdad en un inicio no sabia que hacer pero si sabia que queria iniciar con algo distinto a un cuadrado, asi que escogi un disco y su "contenedor" es una esfera.
 
 <img width="1046" height="778" alt="image" src="https://github.com/user-attachments/assets/09979bbb-f230-4b4d-8ced-5791684811f7" />
@@ -64,3 +66,22 @@ Aquí hay combinaciones de fuerzas de atracción entre más debiles a más fuert
 | (A) | Atracción | Activa y desactiva al tenerlo presionado | 
 | (S) | Repulsión | Activa y desactiva al tenerlo presionado |
 | (D) | Repulsión (entre ellas) | es lo que ayuda a generar ondas|
+
+### Notas de la elaboración
+
+- En cuanto a la IA, la verdad no pelee tanto con ella ya que desde el segundo uno le explique bine lo más importante, que no era un audiovisualizador: "hola, estoy haciendo un instrumento visual (NO UN AUDIO VISUALIZADOR) y tengo un código de base que quiere modificar para que se comporte diferente según las fuerzas etc. ¿te puedo mandar los archivos de codigo principales y de ahi me ayudas?"
+- Como dije primero defini la forma con la que queria que iniciara y que forma tomaria cuando se extendiera que es una esfera.
+- Después me aseguré de poder activar y desactivar la fuerza de atracción y repulsión a gusto y que esa fuera de cierto forma más intensa.
+- Después le añadí una fuerza que es lo que más me ha servido en donde Todas se repelen entre ellas y por eso es que se pegan a los muros del borde es perico que tienen y como después no dejaba llevar con las paredes y quería que subiera diferente de alguna forma le pedí que hiciera una máquina estabas donde se pudiera activar y desactivar este campo y agregó también un estado intermedio en el que se puede hacer una clase de bola moldeable.
+
+### Como lo pense con la canción 
+
+## Autoevaluación 
+
+| Criterio | Peso | Valoración | Explicación |
+|----------|------|------------|-------------|
+| Trazabilidad y comprensión del sistema | 25 | 20 | Comprendo todas las fuerzas que aplique y lo cambie, pero pueden haber un par de lineas que no identifique |
+| Verificación del algoritmo de fuerzas | 25 | 25 | Explique muy explicitamente todos los cambios que realize y como las utilizó en la demostración |
+| Diseño de fuerzas e intención | 20 | 20 | No hay nada previo, todo se modifica en el momento |
+| Instrumento, score e interpretación| 15 | 15 | pepe |
+| Experimentación y criterio frente a la IA | 10 | 
