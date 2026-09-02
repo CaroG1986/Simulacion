@@ -15,3 +15,5 @@ Ahora empezé a pensar en como podría verse. Entonces me gustaría que cada pla
 
 El problema es que no estoy segura de como hacerlo visualmente.
 
+# Actividad 3 
+
