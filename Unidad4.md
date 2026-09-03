@@ -23,4 +23,7 @@ El problema es que no estoy segura de como hacerlo visualmente.
 
  Y estuve literalmente DOS SEMANAS PENSANDO EN LA IDEA Y RESULTA QUE NO PUEDEN SER COSAS QUE GIREN ALREDEDOR DE OTRAS, así que tuve que empezar desde cero, ahora solo usando la idea del sube y baja, ojala funcione.
 
- 
+Entonces despúes de LITERALMENTE LLORAR dije que mejor me queria quedar ocn la idea del sube y baja (LLORE MUCHO :C ) 
+
+<img width="1910" height="866" alt="image" src="https://github.com/user-attachments/assets/4a0baf68-f901-4cd7-b322-bbb835016a28" />
+
