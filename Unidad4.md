@@ -17,3 +17,6 @@ El problema es que no estoy segura de como hacerlo visualmente.
 
 # Actividad 3 
 
+<img width="922" height="667" alt="image" src="https://github.com/user-attachments/assets/561db5fb-6ea8-4505-a9d6-57f6e6d10275" />
+
+<img width="873" height="655" alt="image" src="https://github.com/user-attachments/assets/f8db2377-9f1b-42f0-a1c3-5b6f936141db" />
