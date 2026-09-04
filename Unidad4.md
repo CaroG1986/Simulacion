@@ -25,6 +25,10 @@ El problema es que no estoy segura de como hacerlo visualmente.
 
 Entonces despúes de LITERALMENTE LLORAR dije que mejor me queria quedar con la idea del sube y baja (LLORE MUCHO :C ) 
 
+Aqui esta: https://carog1986.github.io/kuramoto/
+
+(Sin mucha emoción por que la pase mal)
+
 <img width="1910" height="866" alt="image" src="https://github.com/user-attachments/assets/4a0baf68-f901-4cd7-b322-bbb835016a28" />
 
 1. Leí y verifiqué que mi proyecto cumple con los requisitos mínimos de la unidad: 20
