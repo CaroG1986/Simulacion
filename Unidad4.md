@@ -23,7 +23,14 @@ El problema es que no estoy segura de como hacerlo visualmente.
 
  Y estuve literalmente DOS SEMANAS PENSANDO EN LA IDEA Y RESULTA QUE NO PUEDEN SER COSAS QUE GIREN ALREDEDOR DE OTRAS, así que tuve que empezar desde cero, ahora solo usando la idea del sube y baja, ojala funcione.
 
-Entonces despúes de LITERALMENTE LLORAR dije que mejor me queria quedar ocn la idea del sube y baja (LLORE MUCHO :C ) 
+Entonces despúes de LITERALMENTE LLORAR dije que mejor me queria quedar con la idea del sube y baja (LLORE MUCHO :C ) 
 
 <img width="1910" height="866" alt="image" src="https://github.com/user-attachments/assets/4a0baf68-f901-4cd7-b322-bbb835016a28" />
 
+1. Leí y verifiqué que mi proyecto cumple con los requisitos mínimos de la unidad: 20
+2. Puedo explicar claramente qué representa cada variable del modelo de Kuramoto en mi proyecto: 20 cada uno de los ocho muñequitos representa un oscilador del modelo de Kuramoto. Cada oscilador posee una fase, una frecuencia natural y una interacción con los demás osciladores. Estas variables se traducen en movimiento, sonido y comportamiento colectivo dentro del patio de juegos 3D.
+3. Puedo explicar claramente cómo las variables del modelo producen el comportamiento observado en mi proyecto: 20
+
+<img width="1012" height="547" alt="image" src="https://github.com/user-attachments/assets/4f4fb68e-911d-4742-8adc-ef813160bae7" />
+
+4. Puedo demostrar que mi proyecto cumple con los objetivos establecidos en la unidad: 20
