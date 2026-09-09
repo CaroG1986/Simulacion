@@ -33,7 +33,7 @@ Aqui esta: https://carog1986.github.io/kuramoto/
 
 Pero ignoren eso porque lo modifiqué Y cómo le fue hace tan linda tarea decidí que iba a convertir esto en mi propio infierno personal.
 
-<img width="1152" height="2048" alt="image" src="https://github.com/user-attachments/assets/65eeff63-c656-4616-a683-3dcc89a9400e" />
+<img width="736" height="772" alt="image" src="https://github.com/user-attachments/assets/3f9fd05e-8396-4f52-a489-81970360d50c" />
 
 Entonces ahora mi idea cambio por completo siguen siendo 8 osciladores pero ahora es un parque de juegos más completo y cada uno representa un círculo distinto del infierno y tiene el mismo sonido hecho por mí misma de mi sufrimiento. Entonces está el Limbo que no quiere estar ahí entonces llora, la lujuria que va persiguiendo a la gente para darle besos, la pereza que está dormida en el columpio, la violencia que es la que le pega el columpio, La traición que onda que le da vueltas a Limbo, la avaricia que solo ella se puede tirar de tobogán, la Gula que está en un extremo del sube y baja y por eso siempre está abajo y la ira es el otro extremo intentando bajar
 
@@ -43,7 +43,9 @@ Esto inspirado en mi lectura más reciente:
 
 Algunas fotos sobre como se ve: 
 
+<img width="1392" height="755" alt="image" src="https://github.com/user-attachments/assets/b44c113a-67fb-4750-b902-ebdeb7f024d5" />
 
+<img width="1160" height="657" alt="image" src="https://github.com/user-attachments/assets/8ea0be10-64e4-469c-a194-598beffbef6a" />
 
 1. Leí y verifiqué que mi proyecto cumple con los requisitos mínimos de la unidad: 25
 2. Puedo explicar claramente qué representa cada variable del modelo de Kuramoto en mi proyecto: 25 cada uno de los ocho muñequitos representa un oscilador del modelo de Kuramoto. Cada oscilador posee una fase, una frecuencia natural y una interacción con los demás osciladores. Estas variables se traducen en movimiento, sonido y comportamiento colectivo dentro del patio de juegos 3D.
