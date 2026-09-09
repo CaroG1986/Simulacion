@@ -31,8 +31,22 @@ Aqui esta: https://carog1986.github.io/kuramoto/
 
 <img width="1910" height="866" alt="image" src="https://github.com/user-attachments/assets/4a0baf68-f901-4cd7-b322-bbb835016a28" />
 
-1. Leí y verifiqué que mi proyecto cumple con los requisitos mínimos de la unidad: 20
-2. Puedo explicar claramente qué representa cada variable del modelo de Kuramoto en mi proyecto: 20 cada uno de los ocho muñequitos representa un oscilador del modelo de Kuramoto. Cada oscilador posee una fase, una frecuencia natural y una interacción con los demás osciladores. Estas variables se traducen en movimiento, sonido y comportamiento colectivo dentro del patio de juegos 3D.
+Pero ignoren eso porque lo modifiqué Y cómo le fue hace tan linda tarea decidí que iba a convertir esto en mi propio infierno personal.
+
+<img width="1152" height="2048" alt="image" src="https://github.com/user-attachments/assets/65eeff63-c656-4616-a683-3dcc89a9400e" />
+
+Entonces ahora mi idea cambio por completo siguen siendo 8 osciladores pero ahora es un parque de juegos más completo y cada uno representa un círculo distinto del infierno y tiene el mismo sonido hecho por mí misma de mi sufrimiento. Entonces está el Limbo que no quiere estar ahí entonces llora, la lujuria que va persiguiendo a la gente para darle besos, la pereza que está dormida en el columpio, la violencia que es la que le pega el columpio, La traición que onda que le da vueltas a Limbo, la avaricia que solo ella se puede tirar de tobogán, la Gula que está en un extremo del sube y baja y por eso siempre está abajo y la ira es el otro extremo intentando bajar
+
+Esto inspirado en mi lectura más reciente: 
+
+<img width="803" height="1140" alt="image" src="https://github.com/user-attachments/assets/896c0ba9-808d-469b-82f6-376f260e083d" />
+
+Algunas fotos sobre como se ve: 
+
+
+
+1. Leí y verifiqué que mi proyecto cumple con los requisitos mínimos de la unidad: 25
+2. Puedo explicar claramente qué representa cada variable del modelo de Kuramoto en mi proyecto: 25 cada uno de los ocho muñequitos representa un oscilador del modelo de Kuramoto. Cada oscilador posee una fase, una frecuencia natural y una interacción con los demás osciladores. Estas variables se traducen en movimiento, sonido y comportamiento colectivo dentro del patio de juegos 3D.
 3. Puedo explicar claramente cómo las variables del modelo producen el comportamiento observado en mi proyecto: 20
 
 <img width="1012" height="547" alt="image" src="https://github.com/user-attachments/assets/4f4fb68e-911d-4742-8adc-ef813160bae7" />
