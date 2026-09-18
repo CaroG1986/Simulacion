@@ -54,3 +54,5 @@ Algunas fotos sobre como se ve:
 <img width="1012" height="547" alt="image" src="https://github.com/user-attachments/assets/4f4fb68e-911d-4742-8adc-ef813160bae7" />
 
 4. Puedo demostrar que mi proyecto cumple con los objetivos establecidos en la unidad: 20
+
+nota: 4.5
