@@ -18,3 +18,17 @@ La verdad es que cada vez se acercaba más a lo que queria:
 Pero yo quería una figura humana más marcada y luego logre hacerlo. La verdad hasta ahora me gusta mucho
 
 <img width="960" height="821" alt="image" src="https://github.com/user-attachments/assets/596ccafb-03c6-4055-9e11-4286dbb0b9ea" />
+
+link: https://carog1986.github.io/Flow-fields/
+
+# Autoevaluación 
+
+Cumplimiento del encargo: mi instrumento utiliza tecnología web, funciona en tiempo real y permite interpretar la pieza musical elegida. 25
+
+Comprensión y verificación: puedo explicar y defender cómo está construido el sistema, qué perciben los agentes y cómo calculan sus acciones. Puedo predecir y verificar los cambios al modificar un parámetro. 20
+
+Diseño e intención: puedo justificar la selección y combinación de comportamientos y relacionarlos con mi interpretación musical. 25
+
+Interpretación humana: mi score y mis controles permiten conducir el sistema en vivo y responder a su comportamiento. 25
+
+nota final: 4.75 (pero como lo voy a entregar tarde digamos que 4.5 😺 )
