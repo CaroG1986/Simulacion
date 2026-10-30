@@ -17,3 +17,18 @@ Preguntas:
 - ¿Qué diferencia encuentras entre cumplir una tarea y explorar algo por curiosidad?
 - ¿Qué esfuerzo consideras valioso y por qué?
 - Si revisas tus autoevaluaciones, ¿Reconoces tu experiencia en lo que dicen? ¿Te detuviste a examinar tu aprendizaje o delegaste el juicio sobre lo que aprendiste?
+
+link: https://carog1986.github.io/Trabajo_final/
+
+¿Cómo interpretaste la pregunta Why Bother? ¿Qué aspecto decidiste explorar y cómo cambió tu interpretación mientras trabajabas?
+
+Lo pense desde el como se siente crear actualmente a pesar de todo lo que pasa, el porque pareciera que al crear vamos contracorriente cuando es lo más natural  que tenemos.
+
+¿Cómo lo exploraste? ¿Qué técnicas elegiste, qué decisiones tomaste y qué pruebas orientaron el desarrollo?
+
+La verdad lo fui creando según como lo sentia para mi 
+¿Qué encontraste? ¿Qué ocurrió como esperabas, qué te sorprendió y qué sigue abierto?
+¿Qué aprendiste realmente? ¿Qué puedes comprender, explicar o modificar ahora?
+¿Qué sentido tuvo tomarte el trabajo? ¿Qué te hizo continuar, qué esfuerzo consideraste valioso y cómo te sitúas ahora frente a la pregunta de Hodgin?
+
+Nota: 4.8
